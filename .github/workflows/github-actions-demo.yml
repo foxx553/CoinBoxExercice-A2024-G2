@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Install python dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r ${{github.workspace}}/requirements.txt
       - name: Run tests via unittest framework
         run: |
           python -m unittest
