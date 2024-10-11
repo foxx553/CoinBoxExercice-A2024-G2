@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Install all dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r ${{ github.workspace }}/requirements.txt
